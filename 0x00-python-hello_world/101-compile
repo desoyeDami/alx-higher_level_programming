@@ -1,11 +1,2 @@
 # Compile the Python script using py_compile
-python3 -m py_compile "$PYFILE"
-
-# Get the base name of the Python script without the extension
-base_name="$(basename $PYFILE .py)"
-
-# Rename the output file to match the required format
-pyc_file="${base_name}.pyc"
-mv "__pycache__/${base_name}.cpython-310.pyc" "$pyc_file"
-
-echo "Compiling $PYFILE ..."
+python3 -m compileall -b $PYFILE
