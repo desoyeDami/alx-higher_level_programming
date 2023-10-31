@@ -7,6 +7,5 @@ while n != -1:
         m = n + 97
     else:
         m = n + 65
-    alphabet = chr(m)
-    print(f"{alphabet}", end="")
+    print("{}".format(chr(m)), end="")
     n -= 1
