@@ -3,4 +3,4 @@ for n in range(97, 123):
     if n == 101 or n == 113:
         continue
     else:
-        print(chr(n), end = "")
+        print(chr(n), end="")
