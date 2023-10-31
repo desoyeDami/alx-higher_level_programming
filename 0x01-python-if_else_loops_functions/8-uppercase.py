@@ -8,4 +8,4 @@ def uppercase(str):
             res += chr(ord(str[i]) - 97 + 65)
         else:
             res += str[i]
-    print(res)
+    print("{}".format(res))
