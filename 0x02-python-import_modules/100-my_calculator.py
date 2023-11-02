@@ -21,4 +21,4 @@ if __name__ == "__main__":
     else:
         print("Unknown operator. Available operators: +, -, * and /")
         exit(1)
-    print(f"{first_num} + {second_num} = {res}")
+    print(f"{first_num} {operator} {second_num} = {res}")
