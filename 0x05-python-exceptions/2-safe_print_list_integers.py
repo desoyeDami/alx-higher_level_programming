@@ -1,12 +1,13 @@
 #!/usr/bin/python3
 def safe_print_list_integers(my_list=[], x=0):
-    new_list = [element for element in my_list if isinstance(element, int)]
-    list_len = sum(1 for _ in new_list)
-    try:
-        for num in range(0, x):
-            print("{:d}".format(new_list[num]), end="")
-        print()
+    item_count = 0
+    for num in range(0, x):
+        element = my_list[num]
+        if isinstance(element, int):
+            print("{:d}".format(element), end="")
+            item_count += 1
+    print()
+    if x > item_count:
+        return item_count
+    else:
         return x
-    except IndexError:
-        print()
-        return list_len
