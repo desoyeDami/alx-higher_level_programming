@@ -4,7 +4,7 @@ def safe_print_list_integers(my_list=[], x=0):
     list_len = sum(1 for _ in new_list)
     try:
         for num in range(0, x):
-            print(new_list[num], end="")
+            print("{:d}".format(new_list[num]), end="")
         print()
         return x
     except IndexError:
