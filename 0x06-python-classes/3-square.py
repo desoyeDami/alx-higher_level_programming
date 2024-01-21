@@ -4,7 +4,8 @@ class Square:
     Represents a square.
 
     Attributes:
-        __size (int): Private instance attribute representing the size of the square.
+        __size (int): Private instance attribute
+        representing the size of the square.
 
     Methods:
         __init__(self, size=0): Initializes a new instance of the Square class.
