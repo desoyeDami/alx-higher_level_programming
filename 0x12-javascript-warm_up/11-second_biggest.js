@@ -1,6 +1,6 @@
 #!/usr/bin/node
 
-const args = Number(process.argv);
+const args = process.argv;
 
 if (isNaN(args[2]) || args.length === 3) {
   console.log(0);
