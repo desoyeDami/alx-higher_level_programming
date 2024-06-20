@@ -8,4 +8,3 @@ if (isNaN(toNumber)) {
 } else {
   console.log('My number:', toNumber);
 }
-
