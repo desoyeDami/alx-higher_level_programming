@@ -1,8 +1,13 @@
 #!/usr/bin/python3
-import sys  # Module to access command-line arguments
-import MySQLdb  # Module that provides interface for MySQL databases
+
+"""
+Script to connect to a MySQL database and
+fetch states whose names start with 'N'.
+"""
 
 if __name__ == "__main__":
+    import sys  # Module to access command-line arguments
+    import MySQLdb  # Module that provides interface for MySQL databases
     # MySQL connection parameters obtained from command-line arguments
     MY_HOST = "localhost"
     MY_USER = sys.argv[1]  # MySQL username
