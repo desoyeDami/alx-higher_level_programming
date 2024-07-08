@@ -1,3 +1,3 @@
 #!/bin/bash
-# This script that sends a DELETE request to the URL passed as the first argument and displays the body of the response
-curl -s -X DELETE "$1"
+# Send a GET request to the URL with the custom header and display the response body
+curl -s -H "X-School-User-Id: 98" "$1"
